@@ -24,7 +24,7 @@ export default function Panel() {
     <Container fluid className="panel">
         {display === "Menu" && <Menu setDisplay={setDisplay} />}
         {display === "Create" && <div>create</div>}
-        {display === "Settings" && <Settings />}
+        {display === "Settings" && <Settings setDisplay={setDisplay}/>}
     </Container>
     );      
 }
